@@ -1,0 +1,15 @@
+ASK = "yes"
+BALANCE = input("What is the current balance?")
+
+loop while ASK = "yes"
+
+WITHDRAW = input("How much do you want to withdraw?")
+
+if WITHDRAW <= BALANCE then
+   BALANCE = BALANCE - WITHDRAW
+   ASK = input("Money withdrawn. Do you wish to continue? yes/no")
+else
+   ASK = input("Not enough money in the account. Do you wish to continue? yes/no")
+end if
+   
+end loop
